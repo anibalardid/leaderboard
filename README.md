@@ -1,7 +1,7 @@
 # Leaderboard
 
 ## Descripción
-Este proyecto surgió de una necesidad/idea de Alan (@soyelmago).  
+Este proyecto surgió de una necesidad/idea de Alan (<a href="https://twitter.com/soyelmago">@soyelmago</a>) y el team Bug Bounty Argentina (<a href="https://twitter.com/bugbounty_space">@bugbounty_space</a>).  
 La finalidad es tener una página con un ranking de un evento de hackers dinámico.
 
 
@@ -30,5 +30,13 @@ El formato es:
 - Cambiar imagen default de avatar para usuarios sin foto `assets/avatar.png`
 
 
+## Authors
+Bug Bounty Argentina  
+<a href="https://twitter.com/bugbounty_space" ><img src="https://img.shields.io/twitter/follow/bugbounty_space.svg?style=social" /> </a>
 
-
+Anibal Ardid  
+<a href="https://twitter.com/aardid" ><img src="https://img.shields.io/twitter/follow/aardid.svg?style=social" /> </a>
+  
+Alan Levy  
+<a href="https://twitter.com/soyelmago" ><img src="https://img.shields.io/twitter/follow/soyelmago.svg?style=social" /> </a>
+  
