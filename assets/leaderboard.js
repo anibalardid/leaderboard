@@ -10,6 +10,7 @@
 const consoleOptions = 'background: #ffffff; color: #2D9B00';
 const RANKFILE = './ranking.json';
 const DEFAULTAVATAR = './assets/avatar.png';
+const SORTBYREP = true;
 
 console.info('%c  ___      _______  _______  ______   _______  ______    _______  _______  _______  ______    ______  ', consoleOptions);
 console.info('%c |   |    |       ||   _   ||      | |       ||    _ |  |  _    ||       ||   _   ||    _ |  |      | ', consoleOptions);
@@ -26,8 +27,29 @@ var loadRank = () => {
     .catch(err => console.error("Error:" , err));
 };
 
+var compareRep = (a, b) => {
+    const repA = a.reputation;
+    const repB = b.reputation;
+
+    let comparison = 0;
+
+    if (repA < repB) {
+      comparison = 1;
+    } else if (repA > repB) {
+      comparison = -1;
+    }
+    return comparison;
+}
+
 var processRank = (rank) => {
     // console.log("Rank: ", rank)
+    
+    if (SORTBYREP) {
+        rank = rank.sort(compareRep);
+    }
+    // console.log("Sorted Rank: ", rank)
+
+    // Top 3
 
     // winner
     let winneravatar = document.querySelector('#winner-avatar');
@@ -36,7 +58,7 @@ var processRank = (rank) => {
 
     winneravatar.src = (rank[0].avatar && rank[0].avatar !== '') ? rank[0].avatar : DEFAULTAVATAR;
     winnername.innerHTML = rank[0].name;
-    winnertwitter.innerHTML = rank[0].twitter;
+    winnertwitter.innerHTML = (rank[0].twitter) ? '@' + rank[0].twitter : '';
 
     // second
     let secondavatar = document.querySelector('#second-avatar');
@@ -45,7 +67,7 @@ var processRank = (rank) => {
 
     secondavatar.src = (rank[1].avatar && rank[1].avatar !== '') ? rank[1].avatar : DEFAULTAVATAR;
     secondname.innerHTML = rank[1].name;
-    secondtwitter.innerHTML = rank[1].twitter;
+    secondtwitter.innerHTML = (rank[1].twitter) ? '@' + rank[1].twitter : '';
 
     // third
     let thirdavatar = document.querySelector('#third-avatar');
@@ -54,7 +76,7 @@ var processRank = (rank) => {
 
     thirdavatar.src = (rank[2].avatar && rank[2].avatar !== '') ? rank[2].avatar : DEFAULTAVATAR;
     thirdname.innerHTML = rank[2].name;
-    thirdtwitter.innerHTML = rank[2].twitter;
+    thirdtwitter.innerHTML = (rank[2].twitter) ? '@' + rank[2].twitter : '';
 
     // all the rank
     var place = 0;
