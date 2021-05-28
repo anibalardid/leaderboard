@@ -9,7 +9,7 @@
 
 const consoleOptions = 'background: #ffffff; color: #2D9B00';
 const RANKFILE = './ranking.json';
-const DEFAULTAVATAR = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-dOl88Tmpv-OpuAFnG6_MfT-sdUqpSKfljA&usqp=CAU';
+const DEFAULTAVATAR = './assets/avatar.png';
 
 console.info('%c  ___      _______  _______  ______   _______  ______    _______  _______  _______  ______    ______  ', consoleOptions);
 console.info('%c |   |    |       ||   _   ||      | |       ||    _ |  |  _    ||       ||   _   ||    _ |  |      | ', consoleOptions);
