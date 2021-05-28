@@ -23,6 +23,9 @@ El formato es:
 },
 ```
 
+El orden de los participantes se realizará automático basándose en la reputación.  
+
+
 ## Instalación
 - Copiar todo el contenido en el directorio que se quiera levantar el ranking.
 - Configurar ranking.json
