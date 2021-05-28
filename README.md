@@ -24,7 +24,11 @@ El formato es:
 ```
 
 ## Instalación
-- Copiar `index.html' , 'leaderboard.js` y `ranking.json` en el directorio que se quiera levantar el ranking.
+- Copiar todo el contenido en el directorio que se quiera levantar el ranking.
 - Configurar ranking.json
+- Cambiar imagen del logo `assets/logo.png`
+- Cambiar imagen default de avatar para usuarios sin foto `assets/avatar.png`
+
+
 
 
