@@ -3,7 +3,7 @@
  * 
  * Description: The goal of this document is process hackers rankings and show as leaderboard. It will be reloaded automatically
  * Author: Anibal Ardid (@aardid)
- * Co-Author: Adrian "El Mago" (@soyelmago)
+ * Co-Author: Alan Levy "El Mago" (@soyelmago)
  * 
  */
 
