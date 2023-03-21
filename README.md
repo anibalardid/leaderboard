@@ -35,7 +35,7 @@ El orden de los participantes se realizará automático basándose en la reputac
 
 ## Authors
 Bug Bounty Argentina  
-<a href="https://twitter.com/bugbounty_space" ><img src="https://img.shields.io/twitter/follow/bugbounty_space.svg?style=social" /> </a>
+<a href="https://twitter.com/BugBountyArg" ><img src="https://img.shields.io/twitter/follow/BugBountyArg.svg?style=social" /> </a>
 
 Anibal Ardid  
 <a href="https://twitter.com/aardid" ><img src="https://img.shields.io/twitter/follow/aardid.svg?style=social" /> </a>
